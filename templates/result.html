@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thésaurus</title>
+<script>
+function myFunction() {
+  document.getElementById("RES").select();
+  document.execCommand("copy");
+  alert("C'est copié");
+}
+</script>
+</head>
+<body>
+<div align="center">
+    <br />
+    <b>{{MSG1}}</b>
+    <br /><br />
+    <textarea id="RES" rows="10" cols="50">{{MSG2}}</textarea>
+    <button onclick="myFunction()">Copier</button>
+</div>
+
+</body>
+</html>

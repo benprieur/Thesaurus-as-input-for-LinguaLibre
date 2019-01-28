@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thésaurus</title>
+</head>
+<body>
+    <p><small>Choisir un thésaurus de fr.wiktionary et générer automatiquement la liste de mots à enregistrer pour <a href="https://lingualibre.fr/">Lingua Libre</a>.</small></p>
+    <p><small>Le code est ici.</small></p>
+<br />
+    <div align="center">
+    <form action = "http://localhost:5000/result" method = "POST">
+        <input type="text" name="PATH" width="350PX" value="Thésaurus:renard/français" />
+        <input type="submit" value="GO!" />
+        <br />
+        <small><label>Uniquement les liens bleus</label></small>
+        <input type="checkbox" checked name="BLUE" />
+    </form>
+</div>
+</body>
+</html>
+
