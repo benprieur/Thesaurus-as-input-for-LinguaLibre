@@ -28,7 +28,7 @@ def result():
         message1 = ""
         if not page.exists():
             message1 = "La page indiquée n'existe pas : " + page.title()
-            return render_template("/")
+            return render_template("result.html", MSG1=message1, MSG2="")
         else:
             message1 = page.title()
             links = page.linkedPages()
